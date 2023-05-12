@@ -1,0 +1,5 @@
+
+
+ALTER TABLE table1 
+
+ADD PRIMARY KEY (col1)
