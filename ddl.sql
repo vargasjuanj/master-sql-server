@@ -85,6 +85,19 @@ CREATE TABLE sysdiagrams (
 );
 
 
+-- CentroMedico.dbo.table1 definition
+
+-- Drop table
+
+-- DROP TABLE CentroMedico.dbo.table1;
+
+CREATE TABLE table1 (
+	col1 int IDENTITY(1,1) NOT NULL,
+	col2 int NULL,
+	CONSTRAINT PK__table1__357D0D3ED156BBDE PRIMARY KEY (col1)
+);
+
+
 -- CentroMedico.dbo.turno_estado definition
 
 -- Drop table
@@ -122,7 +135,6 @@ CREATE TABLE medico_especialidad (
 
 CREATE TABLE paciente (
 	idPaciente paciente IDENTITY(1,1) NOT NULL,
-	dni varchar(30) COLLATE Modern_Spanish_CI_AS NULL,
 	nombre varchar(50) COLLATE Modern_Spanish_CI_AS NOT NULL,
 	apellido varchar(50) COLLATE Modern_Spanish_CI_AS NULL,
 	fNacimiento date NULL,
@@ -132,7 +144,7 @@ CREATE TABLE paciente (
 	email varchar(30) COLLATE Modern_Spanish_CI_AS NULL,
 	observacion observacion COLLATE Modern_Spanish_CI_AS NULL,
 	CONSTRAINT PK_idPaciente PRIMARY KEY (idPaciente),
-	CONSTRAINT FK__paciente__idPais__01142BA1 FOREIGN KEY (idPais) REFERENCES pais(idPais)
+	CONSTRAINT FK_paciente_pais FOREIGN KEY (idPais) REFERENCES pais(idPais)
 );
 
 
