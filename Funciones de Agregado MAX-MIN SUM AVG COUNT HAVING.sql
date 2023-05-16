@@ -55,4 +55,4 @@ SELECT estado FROM turno GROUP BY estado HAVING COUNT( estado) = 3
 	-- si quisieramos simular la linea anterior con el WHERE, nos saltaría el siguiente error:
 	-- No puede aparecer un agregado en la cláusula WHERE si no es en una subconsulta contenida en una cláusula HAVING o en una lista de selección, y siempre que la columna agregada sea una referencia externa.
 
-SELECT estado FROM turno WHERE COUNT(estado) = 2 GROUP BY estado
+SELECT estado FROM turno WHERE COUNT(estado) = 3 GROUP BY estado

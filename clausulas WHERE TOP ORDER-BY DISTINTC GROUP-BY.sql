@@ -1,4 +1,7 @@
 
+-- Las cláusulas son condiciones de modificación utilizadas para definir los datos que desea seleccionar o manipular.
+
+
 -- CLAUSULA WHERE
 
 SELECT * FROM paciente WHERE nombre = 'Claudio' AND apellido = 'Lopez'

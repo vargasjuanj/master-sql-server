@@ -1,0 +1,1 @@
+cuando hacemos un where o buscamos un valor string, notar que no importa si está en mayuscula o minuscula, lo considera igual
