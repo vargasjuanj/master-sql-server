@@ -56,3 +56,7 @@ SELECT estado FROM turno GROUP BY estado HAVING COUNT( estado) = 3
 	-- No puede aparecer un agregado en la cláusula WHERE si no es en una subconsulta contenida en una cláusula HAVING o en una lista de selección, y siempre que la columna agregada sea una referencia externa.
 
 SELECT estado FROM turno WHERE COUNT(estado) = 3 GROUP BY estado
+
+--Muestra los distintos estados que aparecen menos de 4 veces
+SELECT estado, COUNT(estado) cantidad FROM turno GROUP BY estado HAVING COUNT(estado) < 4
+

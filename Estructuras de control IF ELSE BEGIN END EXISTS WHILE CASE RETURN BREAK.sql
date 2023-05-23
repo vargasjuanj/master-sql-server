@@ -22,20 +22,20 @@ IF @idPaciente = 7
 		--EXISTS: Evalua si existe un grupo de registros de determinada consulta
 			--Recibe una consulta de selección
 		IF EXISTS( SELECT * FROM paciente WHERE idPaciente = 3 )
-		PRINT 'existe'
+			PRINT 'existe'
 
 	END
 ELSE -- Si vamos a escribir mas de unalinea usamos el BEGIN - END, sino es la linea que le sigue la que vale
 	BEGIN
-	PRINT 'No se cumplió la condición'
-	PRINT 'Lo siento'
+		PRINT 'No se cumplió la condición'
+		PRINT 'Lo siento'
 	END
 
 
 
 
 
-   --WHILE : Eejecuta un bloque de código hasta que se cumpla cierta condición, a menos que haya un return sale del bucle
+   --WHILE : Eejecuta un bloque de código hasta que se cumpla cierta condición, a menos que haya un return o break sale del bucle
 
 DECLARE @contador INT = 0
 
