@@ -1,0 +1,5 @@
+CONSIDERACIONES
+Se recomiendan que los campos que se usen sean primarys key en lo posible, si las llegan a tener en común. Es más eficiente.
+Siempre se aconseja que se ponga del lado izquierdo el campo que sigue despues del JOIN, ya que esta cargada ya esa tabla y la consulta es mas eficiente
+Arrojan el mismo resultado, pero va a tener un costo mas grande si se usa al reves
+y siempre usar alias de tablas obviamente.
