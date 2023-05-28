@@ -1,0 +1,30 @@
+
+Backupear
+
+Para hacer backup hacemos segundo click sobre la base de datos - task - backup
+Hat dos tipos de backup, el full y el diferencial
+
+Full : Realiza una copia de la bd al 100% con todos los objetos y con todos los datos que contenga adentro
+	Si se quiere automatizar un proceso para realizar un backup se recomienda hacer uno full, porque se evitan muchos problemas a la hora de restaurar la bd
+
+Diferencial: Realiza solo un backup de los nuevos objetos que hayan en la bd, nuevos datos en función de un backup realizado previamente.
+	por lo tanto si hacemos por primera vez un backup, y elejimos un diferencial en ese caso lo va a hacer al 100% ya que no hay un backup anterior
+	para realizar esa diferencia de información. Backup de los cambios
+	
+	
+	
+	
+Restaurar
+
+	Hacemos segundo click sobre la carpeta Database (mas arriba del nombre de la bd) y elegimos restore database, device, elegimos el archivo. Si dejamos el mismo nombre de la bd la va a pisar y si ponemos otro va a crear una nueva.
+	
+	nos sale la fecha del backup, tipo de bck, etc
+	
+	
+	
+
+	
+	
+	
+	
+	

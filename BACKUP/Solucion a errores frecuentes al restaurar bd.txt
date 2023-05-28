@@ -1,0 +1,26 @@
+Atención: Solución a errores frecuentes al restaurar un Backup
+Error: Exclusive access could not be obtained because the database is in use
+
+Solución: Este error ocurre cuando la base de datos que intentamos restaurar se encuentra en uso. Para solucionar este problema cierra cualquier ventana que tengas abierta sobre la base de datos o bien cierra Management Studio y vuelve a iniciar sesión.
+
+
+
+Error: Base de datos en modo Restoring. Texto junto al nombre de la base de datos "(Restoring...)" no permite iniciar sesión.
+
+Solución: Este error ocurre porque la base de datos a la que se le está aplicando el RESTORE quedó en espera y no ha terminado de realizar completamente la restauración. Incluso puede fallar y que nunca termine.
+
+Para solucionar este problema este problema realice los siguientes pasos:
+
+1. Cierre Management Studio y vuelva a abrirlo.
+
+2. Como la base está en espera, debes iniciar sesión en la base MASTER
+
+a. En la ventana de Login, clickear en botón opciones
+
+b. En "connect to database" seleccionar base de datos 'master'
+
+c. Iniciamos sesión en modo Windows Authentication seleccionando dicha opción en Server Name, así podrás iniciar sin usuario ni password.
+
+Luego presion CTRL + N para abrir una nueva ventana de script y ejecuta la siguiente sentencia:
+
+RESTORE DATABASE CentroMedico WITH RECOVERY
