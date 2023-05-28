@@ -1,10 +1,10 @@
 
-EXEC ALTA_Paciente '232323','Jorge','Lopez','20180518','calle1','PER','','jorge@gmail.com',''
+--EXEC ALTA_Paciente '252525','Jorge','Lopez','20180518','calle1','MEX','','jorge@gmail.com',''
 
 
 --SELECT * FROM paciente
 
-CREATE PROC ALTA_Paciente (
+ALTER PROC ALTA_Paciente (
 				@dni VARCHAR(20),
 				@nombre VARCHAR(50), -- si este parametro es de 20 por ejem, y el argumento que se le pasa es de 40, va a saltar un warning y es posible que pierda datos
 				@apellido VARCHAR(50), 
