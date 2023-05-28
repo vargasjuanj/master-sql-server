@@ -1,0 +1,4 @@
+
+Sirven para alivianar la carga de la consulta, se puede mejorar la perfonmance para obtener los resultados deseados a la hora de realizar una consulta y obtener cierta informacion
+
+Ayudan a alivinar un poco al realizar la consulta principal
