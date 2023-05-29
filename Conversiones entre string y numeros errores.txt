@@ -1,0 +1,11 @@
+Al sumar 2 numeros, ya sea en formato de cadena o numero pero distintos formatos si los sumas.
+Cuando los dos son formato de cadena los junta
+Pero cuando es una letra o palabra no lo une si el otro es un numero, por eso se usa el convert
+PRINT 2 + '1' -- 3
+PRINT '2' + 1 -- = 3
+PRINT '2' + '1' -- 21
+PRINT 'MARTES' + '2' -- MARTES2
+PRINT 'MARTES' + 2 -- ERROR : Error de conversión al convertir el valor varchar 'MARTES' al tipo de datos int.
+PRINT  2 + 'MARTES' -- ERROR
+PRINT '2' + 'MARTES'
+PRINT 'MARTES' + '2'
