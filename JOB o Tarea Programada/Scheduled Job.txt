@@ -1,0 +1,20 @@
+
+Un Scheduled Job esta administrado por el SQL Server Agent, que es un componente en sql server que administra las tareas programadas
+
+
+Una tarea programada es un proceso que podemos crear y especificarle que ejecute ciertos scripts en determinados momentos, repetirlos ciertas veces al día.
+
+Se utiliza para generar procesos que me permitan procesar datos de tablas y que sirva para tomar decisiones más adelante, por ejemplo para  cambiarle el estado a algun registro en particular por algun motivo especifico
+
+ 
+ Dentro de server agent hacemos click derecho sobre la carpeta Jobs - new Job- vemos todos los componentes que tiene un job para definirlo a gusto
+ 
+	.Solapa General :lleva nombre, que usuario lo va a ejecutar, y la descripción
+	
+	.Steps: Aca se agregan los procesos que va a ejecutar el job. Pueden ser sotred procedures, o procesos aislados que podemos escribir en el recuadro directamente
+	
+	.Scheduled : Especificamos cuando se va a ejecutar, o cuantas veces al día, cuando va a comenzar y ejecutarse nuevamente, etc.
+	
+En la versíón express capas no esta disponible, pero si en la paga, pero puede ser que si, depende la versión del sql server, además quizas solo este deshabilitado o parado el proceso
+	
+	

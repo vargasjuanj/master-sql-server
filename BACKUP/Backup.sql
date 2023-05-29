@@ -20,5 +20,5 @@ SET @name = 'CentroMedico' + @fecha
 BACKUP DATABASE CentroMedico
 TO DISK = @path -- ruta donde se va a guardar, con el nombre dle archivo
 -- el nombre que va aca sería como un identificador del backup, no es el nombre del archivo, ni tampoco de la base de datos
-WITH NO_COMPRESSION, NAME = 'ggg' --'asdf' -- 'CentroMedico' -- -- sin compresión y la bd la cual quiero backupear
+WITH NO_COMPRESSION, NAME = @name --'asdf' -- 'CentroMedico' -- -- sin compresión y la bd la cual quiero backupear
 
